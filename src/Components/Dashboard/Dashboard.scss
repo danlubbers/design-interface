@@ -1,0 +1,60 @@
+.dashboard-app {
+    margin: auto 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    // background: rgb(161, 71, 71);
+
+
+    .booger {
+        background: blue;
+    }
+
+    .colors-section {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        // background: rgb(163, 139, 139);
+
+        h1 {
+            font-family: $font-family;
+            font-size: 2em;
+        }
+
+        .circle-before-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            
+            .circle-before {
+                margin: 10px 0px 10px 0px;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-image: radial-gradient(#999, #555, #111);
+            }
+        }
+        
+        .circle-after-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+
+            .circle-after {
+                margin: 10px 0px 10px 0px;
+                width: 200px;
+                height: 200px;
+                border-radius: 50%;
+                background-image: radial-gradient(#111, #555, #999);
+            }
+        }   
+    }
+}
