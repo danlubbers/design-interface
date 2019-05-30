@@ -1,0 +1,21 @@
+.color-picker-app {
+    margin: auto 0;
+    width: 100vw;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    H1 {
+      margin: 10px 0px 0px 0px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      font-family: $font-family;
+      font-size: 1.2em;
+      font-weight: bold;
+      letter-spacing: .15em;
+    }      
+}

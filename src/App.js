@@ -1,8 +1,9 @@
 import React from 'react';
 import './App.scss';
-import Header from './Components/Header/Header';
-import Dashboard from './Components/Dashboard/Dashboard';
-import Footer from './Components/Footer/Footer';
+// import Header from './Components/Header/Header';
+// import Dashboard from './Components/Dashboard/Dashboard';
+import ColorPicker from './Components/ColorPicker/ColorPicker';
+// import Footer from './Components/Footer/Footer';
 
 function App() {
   return (
@@ -10,9 +11,9 @@ function App() {
       {/* <header>
         <Header />
       </header> */}
-
-      <Dashboard />
-
+    
+      {/* <Dashboard />      */}
+      <ColorPicker />
       {/* <footer>
         <Footer />
       </footer> */}

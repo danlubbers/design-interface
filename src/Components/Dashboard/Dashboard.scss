@@ -1,21 +1,16 @@
 .dashboard-app {
-    margin: auto 0;
+    // margin: auto 0;
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
     // background: rgb(161, 71, 71);
 
-
-    .booger {
-        background: blue;
-    }
-
     .colors-section {
+        margin: auto 0;
         width: 100vw;
-        height: 100vh;
+        height: 50vh;
         display: flex;
         justify-content: center;
         align-items: center;

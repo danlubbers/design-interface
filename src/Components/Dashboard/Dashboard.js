@@ -1,4 +1,5 @@
 import React, {Component} from 'react';
+import ColorPicker from '../ColorPicker/ColorPicker';
 
 export default class Dashboard extends Component {
   constructor(props) {
@@ -15,13 +16,14 @@ export default class Dashboard extends Component {
     this.setState({click: !this.state.click});
   }
 
-
     render () {
+
       return (
         <div className='dashboard-app'>
           <div className='colors-section'>
             <h1>Colors</h1>
 
+        {/* Color Sphere */}
             <div className='show-hide-circle' onClick={_=> this.handleClick()}>
             { this.state.click ? 
               <div className='circle-before-container'>
@@ -34,8 +36,13 @@ export default class Dashboard extends Component {
               </div>
             }
             </div>
-            
+
+
          </div>
+
+            <div>
+            <ColorPicker />
+            </div>
         </div>
       )
     }
