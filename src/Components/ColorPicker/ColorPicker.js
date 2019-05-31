@@ -67,26 +67,35 @@ handleChange = (color1) => {
             },
           });
 
+          let hexR = `${this.state.color1.r.toString(16).toUpperCase()}`;
+          let hexG = `${this.state.color1.g.toString(16).toUpperCase()}`;
+          let hexB = `${this.state.color1.b.toString(16).toUpperCase()}`;
+          let hexA = `${Math.round(this.state.color1.a).toString(16).toUpperCase().slice(0, -1)}`;
+
+          hexR.length === 1 ? hexR = `0${hexR}` : hexR = `${hexR}`;
+          hexG.length === 1 ? hexG = `0${hexG}` : hexG = `${hexG}`;
+          hexB.length === 1 ? hexB = `0${hexB}` : hexB = `${hexB}`;
+          hexA.length === 1 ? hexA = `0${hexA}` : hexA = `${hexA}`;
+          
+          
+
         return(
           <div className='color-picker-app'>
             <div style={ styles.swatch } >
-          <div style={ styles.color } onClick={ this.handleClick }/> 
-          <h1>
-          {`rgba(${ this.state.color1.r }, ${ this.state.color1.g }, ${ this.state.color1.b }, ${ this.state.color1.a })`} 
-          </h1>
-          </div>
+              <div style={ styles.color } onClick={ this.handleClick }/> 
+                <h1>
+                    {`rgba(${ this.state.color1.r }, ${ this.state.color1.g }, ${ this.state.color1.b }, ${ this.state.color1.a })`} 
+                </h1>
+            </div>
             { this.state.displayColorPicker ? <div style={ styles.popover }>
-          <div style={ styles.cover } onClick={ this.handleClose }/>
-            <SketchPicker color={ this.state.color1 } onChange={ this.handleChange } />
-          </div> : null }
+            <div style={ styles.cover } onClick={ this.handleClose }/>
+              <SketchPicker color={ this.state.color1 } onChange={ this.handleChange } />
+            </div> : null }
 
           <div>
-
+            { `HEX Code: #${hexR}${hexG}${hexB}${hexA}` }
           </div>
-            { 
-              `HEX Code:
-              #${this.state.color1.r.toString(16).toUpperCase()}${this.state.color1.g.toString(16).toUpperCase()}${this.state.color1.b.toString(16).toUpperCase()}${Math.round(this.state.color1.a).toString(16).toUpperCase().slice(0, -1)}` 
-            }
+
           </div>
         
         )
