@@ -6,10 +6,11 @@ $font-family: 'Roboto', san-serif;
 @import './Components/ColorPicker/ColorPicker.scss';
 
 .App {
-  display: flex;
-  justify-content: center;
-  align-content: center;
-  flex-direction: column;
-//   background: grey;
-
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    flex-direction: column;
+    background: rgb(125, 125, 125);
 }

@@ -8,7 +8,7 @@
     flex-direction: column;
 
     H1 {
-      margin: 10px 0px 0px 0px;
+      margin: 20px 0px 15px 0px;
       display: flex;
       justify-content: center;
       align-items: center;
@@ -17,5 +17,16 @@
       font-size: 1.2em;
       font-weight: bold;
       letter-spacing: .15em;
-    }      
+    }  
+    
+    .hex-code {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        font-family: $font-family;
+        font-size: 1.2em;
+        font-weight: bold;
+        letter-spacing: .15em;
+    }
 }
